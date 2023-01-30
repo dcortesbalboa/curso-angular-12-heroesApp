@@ -14,6 +14,7 @@ import { HeroesHomeComponent } from './pages/heroes-home/heroes-home.component';
 import { ListComponent } from './pages/list/list.component';
 import { CardComponent } from './components/card/card.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     HeroesHomeComponent,
     ListComponent,
     CardComponent,
-    ImagenPipe
+    ImagenPipe,
+    ConfirmarComponent
   ],
   imports: [
     CommonModule,

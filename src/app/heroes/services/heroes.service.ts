@@ -28,4 +28,15 @@ export class HeroesService {
     return this.http.get<Heroe[]>(`${this.url}?q=${name}&limit=5`);
   }
 
+  addHeroe(heroe: Heroe): Observable<Heroe>{
+    return this.http.post<Heroe>(this.url, heroe)
+  }
+
+  editHeroe(heroe: Heroe): Observable<Heroe>{
+    return this.http.put<Heroe>(`${this.url}/${heroe.id}`, heroe)
+  }
+
+  deleteHeroe(heroe: Heroe): Observable<any>{
+    return this.http.delete<any>(`${this.url}/${heroe.id}`)
+  }
 }
